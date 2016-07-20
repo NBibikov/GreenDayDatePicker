@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'GreenDayDatePicker_Example' do
+  pod 'GreenDayDatePicker', :path => '../'
+
+  target 'GreenDayDatePicker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
