@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		323C50EA1D3FA77B0011F0AA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323C50E91D3FA77B0011F0AA /* Launch Screen.storyboard */; };
 		4853FC780B183755FD13E335 /* Pods_GreenDayDatePicker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A659993853C17009A56891FB /* Pods_GreenDayDatePicker_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -40,6 +41,7 @@
 		205589A86836065C6C90242A /* Pods-GreenDayDatePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenDayDatePicker_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GreenDayDatePicker_Example/Pods-GreenDayDatePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		29715D691190636C319F791C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2FA9EFDECCFC6AE520F1E19F /* GreenDayDatePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GreenDayDatePicker.podspec; path = ../GreenDayDatePicker.podspec; sourceTree = "<group>"; };
+		323C50E91D3FA77B0011F0AA /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* GreenDayDatePicker_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenDayDatePicker_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -147,6 +149,7 @@
 				6003F5A5195388D20070C39A /* NBViewController.h */,
 				6003F5A6195388D20070C39A /* NBViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				323C50E91D3FA77B0011F0AA /* Launch Screen.storyboard */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for GreenDayDatePicker";
@@ -278,6 +281,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				323C50EA1D3FA77B0011F0AA /* Launch Screen.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,7 +516,6 @@
 			baseConfigurationReference = 9016CE8F61B1C325D0D9B6EB /* Pods-GreenDayDatePicker_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GreenDayDatePicker/GreenDayDatePicker-Prefix.pch";
 				INFOPLIST_FILE = "GreenDayDatePicker/GreenDayDatePicker-Info.plist";
@@ -528,7 +531,6 @@
 			baseConfigurationReference = 205589A86836065C6C90242A /* Pods-GreenDayDatePicker_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GreenDayDatePicker/GreenDayDatePicker-Prefix.pch";
 				INFOPLIST_FILE = "GreenDayDatePicker/GreenDayDatePicker-Info.plist";

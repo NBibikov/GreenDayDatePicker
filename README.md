@@ -1,29 +1,80 @@
-# GreenDayDatePicker
 
-[![CI Status](http://img.shields.io/travis/Nick Bibikov/GreenDayDatePicker.svg?style=flat)](https://travis-ci.org/Nick Bibikov/GreenDayDatePicker)
-[![Version](https://img.shields.io/cocoapods/v/GreenDayDatePicker.svg?style=flat)](http://cocoapods.org/pods/GreenDayDatePicker)
-[![License](https://img.shields.io/cocoapods/l/GreenDayDatePicker.svg?style=flat)](http://cocoapods.org/pods/GreenDayDatePicker)
-[![Platform](https://img.shields.io/cocoapods/p/GreenDayDatePicker.svg?style=flat)](http://cocoapods.org/pods/GreenDayDatePicker)
 
-## Example
+## Why GreenDayDatePicker?
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Hello! My goal was create simple and not ugly date picker. 
+It work in two mode - show in centre and of bottom screen. 
 
-## Requirements
+DatePicker will hidden after click outside or when user click button "Save". You can set font and colors.
+
+
+![alt tag](https://raw.githubusercontent.com/NBibikov/GreenDayDatePicker/master/ScreenCasts/screenCast1.gif)
+![alt tag](https://raw.githubusercontent.com/NBibikov/GreenDayDatePicker/master/ScreenCasts/screenCast2.gif)
+
 
 ## Installation
 
-GreenDayDatePicker is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+pod 'GreenDayDatePicker'
 
-```ruby
-pod "GreenDayDatePicker"
+## Usage 
+
+Import header
+```
+#import <DayDatePickerView.h>
 ```
 
-## Author
+After that you have initialize datePicker and set parameters and block for data callback
 
-Nick Bibikov, n.bibikov@me.com
+```
+self.dayDatePicker = [[DayDatePickerView alloc] initWithType:DayDatePickerCenterType onView:self.view];
 
-## License
+[self.dayDatePicker setSaveDateButtonPressedBlock:^(UIBarButtonItem *sender, NSDate *date)
+{
+NSLog(@"save date: %@", date);
+}];
 
-GreenDayDatePicker is available under the MIT license. See the LICENSE file for more info.
+[self.dayDatePicker setDidSelectDateBlock:^(NSDate *date)
+{
+NSLog(@"select date: %@", date);
+}];
+
+```
+
+## Customisation 
+
+You can customisation GreenDayDatePicker with property list
+
+```
+@property (strong, nonatomic) NSString *todayButtonTitle;
+@property (strong, nonatomic) NSString *saveButtonTitle;
+
+@property (strong, nonatomic) NSDate *minimumDate; //default is Today
+@property (strong, nonatomic) NSDate *maximumDate;
+@property (strong, nonatomic) NSDate *date;
+
+@property (strong, nonatomic) NSDateFormatter *dayDateFormatter;
+@property (strong, nonatomic) NSDateFormatter *monthDateFormatter;
+@property (strong, nonatomic) NSDateFormatter *yearDateFormatter;
+
+@property (strong, nonatomic) NSCalendar *calendar;
+
+@property (strong, nonatomic) UITableView *daysTableView;
+@property (strong, nonatomic) UITableView *monthsTableView;
+@property (strong, nonatomic) UITableView *yearsTableView;
+
+@property (assign, nonatomic) NSInteger rowHeight;
+
+@property (strong, nonatomic) UIColor *mainBackgroundColor;
+@property (strong, nonatomic) UIColor *datePickerSelectionColor;
+@property (strong, nonatomic) UIColor *textColorForRow;
+@property (strong, nonatomic) UIColor *backgroundColorForRow;
+
+@property (strong, nonatomic) UIFont *fontForRow;
+```
+
+## Contact
+
+@nbibikov on Twitter
+@nbibikov on Github
+n.bibikov [at] me [dot] com
+

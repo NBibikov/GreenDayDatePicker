@@ -10,4 +10,6 @@
 
 @interface NBViewController : UIViewController
 
+- (IBAction)showDatePickerButtonPressed:(UIButton *)sender;
+
 @end

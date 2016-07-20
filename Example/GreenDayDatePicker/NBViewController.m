@@ -7,9 +7,10 @@
 //
 
 #import "NBViewController.h"
+#import <GreenDayDatePicker/GreenDayDatePicker-umbrella.h>
 
 @interface NBViewController ()
-
+@property (strong, nonatomic) DayDatePickerView* dayDatePicker;
 @end
 
 @implementation NBViewController
@@ -17,13 +18,39 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self addDayDatePicker];
 }
 
-- (void)didReceiveMemoryWarning
+
+- (void) addDayDatePicker
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    //    self.dayDatePicker = [[DayDatePickerView alloc] initWithType:DayDatePickerCenterType onView:self.view];
+    self.dayDatePicker = [[DayDatePickerView alloc] initWithType:DayDatePickerBottomType onView:self.view];
+    self.dayDatePicker.fontForRow = [UIFont fontWithName:@"AvenirNext-Regular" size:16.f];
+    
+    //    self.dayDatePicker.datePickerSelectionColor = [UIColor colorWithRed:0.4458 green:0.6509 blue:0.0125 alpha:1.0];
+    
+    //    self.dayDatePicker.saveButtonTitle = @"Сохранить";
+    //    self.dayDatePicker.todayButtonTitle = @"Сегодня";
+    
+    //    self.dayDatePicker.textColorForRow = [UIColor whiteColor];
+    //    self.dayDatePicker.backgroundColorForRow = [UIColor darkGrayColor];
+    
+    
+    [self.dayDatePicker setSaveDateButtonPressedBlock:^(UIBarButtonItem *sender, NSDate *date)
+     {
+         NSLog(@"save date: %@", date);
+     }];
+    
+    [self.dayDatePicker setDidSelectDateBlock:^(NSDate *date)
+     {
+         NSLog(@"select date: %@", date);
+     }];
+    
 }
 
+- (IBAction)showDatePickerButtonPressed:(UIButton *)sender
+{
+    [self.dayDatePicker showDayDatePicker];
+}
 @end

@@ -1,0 +1,16 @@
+PODS:
+  - GreenDayDatePicker (0.1.0)
+
+DEPENDENCIES:
+  - GreenDayDatePicker (from `../`)
+
+EXTERNAL SOURCES:
+  GreenDayDatePicker:
+    :path: ../
+
+SPEC CHECKSUMS:
+  GreenDayDatePicker: f1b72239a0befbb8174cc10b6dc3457a5d9d1084
+
+PODFILE CHECKSUM: 7dbb82645ddf30022ffbafaf474a40262782f067
+
+COCOAPODS: 1.0.1

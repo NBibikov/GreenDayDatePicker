@@ -7,36 +7,36 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'GreenDayDatePicker'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of GreenDayDatePicker.'
+s.name             = 'GreenDayDatePicker'
+s.version          = '0.1.0'
+s.summary          = 'Simple date picker "GreenDayDatePicker" for iOS written on Objective-C. Work in two modes with only few lines of code!'
 
 # This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+# * Hello! My goal was create simple and not ugly date picker. It work in two mode - show in centre and of bottom screnn.
+# * DatePicker will hidden after click outside or when user click button "Save".
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+s.description      = <<-DESC
+Hello! My goal was create simple and not ugly date picker. It work in two mode - show in centre and of bottom screnn.
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/GreenDayDatePicker'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Nick Bibikov' => 'n.bibikov@me.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/GreenDayDatePicker.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+DatePicker will hidden after click outside or when user click button "Save".
+DESC
 
-  s.ios.deployment_target = '8.0'
+s.homepage         = 'https://github.com/NBibikov/GreenDayDatePicker'
+# s.screenshots     = 'https://raw.githubusercontent.com/NBibikov/GreenDayDatePicker/master/ScreenCasts/screenCast1.gif', 'https://raw.githubusercontent.com/NBibikov/GreenDayDatePicker/master/ScreenCasts/screenCast2.gif'
+s.license          = { :type => 'MIT', :file => 'LICENSE' }
+s.author           = { 'Nick Bibikov' => 'n.bibikov@me.com' }
+s.source           = { :git => 'https://github.com/NBibikov/GreenDayDatePicker.git', :tag => s.version.to_s }
+# s.social_media_url = 'https://twitter.com/nbibikov'
 
-  s.source_files = 'GreenDayDatePicker/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'GreenDayDatePicker' => ['GreenDayDatePicker/Assets/*.png']
-  # }
+s.ios.deployment_target = '8.0'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+s.source_files = 'GreenDayDatePicker/Classes/**/*'
+
+# s.resource_bundles = {
+#   'GreenDayDatePicker' => ['GreenDayDatePicker/Assets/*.png']
+# }
+
+# s.public_header_files = 'Pod/Classes/**/*.h'
+# s.frameworks = 'UIKit'
+
 end
