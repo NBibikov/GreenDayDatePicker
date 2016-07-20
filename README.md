@@ -40,7 +40,7 @@ NSLog(@"select date: %@", date);
 
 ```
 
-## Customisation 
+## Customization
 
 You can customisation GreenDayDatePicker with property list
 
