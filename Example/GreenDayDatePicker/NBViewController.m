@@ -10,7 +10,7 @@
 #import <GreenDayDatePicker/GreenDayDatePicker-umbrella.h>
 
 @interface NBViewController ()
-@property (strong, nonatomic) DayDatePickerView* dayDatePicker;
+@property (strong, nonatomic) GreenDayDatePickerView* dayDatePicker;
 @end
 
 @implementation NBViewController
@@ -24,8 +24,8 @@
 
 - (void) addDayDatePicker
 {
-    //    self.dayDatePicker = [[DayDatePickerView alloc] initWithType:DayDatePickerCenterType onView:self.view];
-    self.dayDatePicker = [[DayDatePickerView alloc] initWithType:DayDatePickerBottomType onView:self.view];
+    //    self.dayDatePicker = [[GreenDayDatePickerView alloc] initWithType:DayDatePickerCenterType onView:self.view];
+    self.dayDatePicker = [[GreenDayDatePickerView alloc] initWithType:DayDatePickerBottomType onView:self.view];
     self.dayDatePicker.fontForRow = [UIFont fontWithName:@"AvenirNext-Regular" size:16.f];
     
     //    self.dayDatePicker.datePickerSelectionColor = [UIColor colorWithRed:0.4458 green:0.6509 blue:0.0125 alpha:1.0];

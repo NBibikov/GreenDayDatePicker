@@ -1,12 +1,12 @@
 //
-//  DayDatePickerView.m
+//  GreenDayDatePickerView.m
 //  YourProjectName
 //
 //  Created by Nick Bibikov on 7/7/16.
 //  Copyright © 2016 Grossum. All rights reserved.
 //
 
-#import "DayDatePickerView.h"
+#import "GreenDayDatePickerView.h"
 
 
 static NSInteger maxYearForSelection = 2;
@@ -17,7 +17,7 @@ static CGFloat kLeftAndRightInsets = 40.f;
 static NSString* kSaveTitle = @"Save";
 static NSString* kTodayButton = @"Today";
 
-@interface DayDatePickerView ()
+@interface GreenDayDatePickerView ()
 @property (strong, nonatomic) NSDateComponents *components;
 @property (strong, nonatomic) UIView *overlayView;
 @property (strong, nonatomic) UIView *selectionIndicator;
@@ -26,12 +26,12 @@ static NSString* kTodayButton = @"Today";
 @property (strong, nonatomic) UIBarButtonItem *saveButton;
 @property (strong, nonatomic) UIBarButtonItem *todayButton;
 @property (assign, nonatomic) CGPoint finalCenterPoint;
-@property (assign, nonatomic) CGRect dayDatePickerViewRect;
+@property (assign, nonatomic) CGRect GreenDayDatePickerViewRect;
 @property (assign, nonatomic) NSInteger centralRowOffset;
 
 @end
 
-@implementation DayDatePickerView
+@implementation GreenDayDatePickerView
 
 @synthesize date = _date;
 @synthesize dayDateFormatter = _dayDateFormatter;
@@ -55,7 +55,7 @@ static NSString* kTodayButton = @"Today";
         
         [self.backgroundView addGestureRecognizer:tapGesture];
         [self calculateSizeForDayDatePickerType:pickerType];
-        [self setFrame:self.dayDatePickerViewRect];
+        [self setFrame:self.GreenDayDatePickerViewRect];
         [self setup];
     }
     return self;
@@ -77,7 +77,7 @@ static NSString* kTodayButton = @"Today";
             CGFloat mainWidth  = CGRectGetWidth(self.superView.frame);
             CGFloat datePickerHeight = mainHeight/2.2;
             CGFloat datePickerWidth  = mainWidth - leftAndRightInsets;
-            self.dayDatePickerViewRect = CGRectMake(leftAndRightInsets/2, mainHeight/2 - datePickerHeight/2, datePickerWidth, datePickerHeight);
+            self.GreenDayDatePickerViewRect = CGRectMake(leftAndRightInsets/2, mainHeight/2 - datePickerHeight/2, datePickerWidth, datePickerHeight);
             self.finalCenterPoint = self.backgroundView.center;
             
         }
@@ -88,7 +88,7 @@ static NSString* kTodayButton = @"Today";
             CGFloat mainHeight = CGRectGetHeight(self.superView.frame);
             CGFloat mainWidth  = CGRectGetWidth(self.superView.frame);
             CGFloat datePickerHeight = mainHeight/2.2;
-            self.dayDatePickerViewRect = CGRectMake(0, mainHeight - datePickerHeight, mainWidth, datePickerHeight);
+            self.GreenDayDatePickerViewRect = CGRectMake(0, mainHeight - datePickerHeight, mainWidth, datePickerHeight);
             self.finalCenterPoint = CGPointMake(mainWidth/2, mainHeight - datePickerHeight/2);
         }
             break;
@@ -112,19 +112,19 @@ static NSString* kTodayButton = @"Today";
     CGRect frame = self.bounds;
     frame.size.width = self.frame.size.width / 2.8;
     
-    self.daysTableView = [self dayDatePickerTableViewWithFrame:frame type:DayDatePickerViewColumnTypeDay];
+    self.daysTableView = [self dayDatePickerTableViewWithFrame:frame type:GreenDayDatePickerViewColumnTypeDay];
     [self addSubview:self.daysTableView];
     
     frame.origin.x = frame.size.width;
     frame.size.width = self.frame.size.width / 2.5;
     
-    self.monthsTableView = [self dayDatePickerTableViewWithFrame:frame type:DayDatePickerViewColumnTypeMonth];
+    self.monthsTableView = [self dayDatePickerTableViewWithFrame:frame type:GreenDayDatePickerViewColumnTypeMonth];
     [self addSubview:self.monthsTableView];
     
     frame.size.width = self.frame.size.width - frame.origin.x - frame.size.width;
     frame.origin.x = self.frame.size.width - frame.size.width;
     
-    self.yearsTableView = [self dayDatePickerTableViewWithFrame:frame type:DayDatePickerViewColumnTypeYear];
+    self.yearsTableView = [self dayDatePickerTableViewWithFrame:frame type:GreenDayDatePickerViewColumnTypeYear];
     [self addSubview:self.yearsTableView];
     
     
@@ -210,7 +210,7 @@ static NSString* kTodayButton = @"Today";
 
 
 
-- (UITableView *)dayDatePickerTableViewWithFrame:(CGRect)frame type:(DayDatePickerViewColumnType)type
+- (UITableView *)dayDatePickerTableViewWithFrame:(CGRect)frame type:(GreenDayDatePickerViewColumnType)type
 {
     UITableView *tableView =
     tableView = [[UITableView alloc]initWithFrame:frame style:UITableViewStylePlain];
@@ -316,7 +316,7 @@ static NSString* kTodayButton = @"Today";
     cell.textLabel.textColor = [UIColor blackColor];
     cell.backgroundColor = [UIColor whiteColor];
     
-    DayDatePickerViewColumnType columType = DayDatePickerViewColumnTypeDay;
+    GreenDayDatePickerViewColumnType columType = GreenDayDatePickerViewColumnTypeDay;
     BOOL disabled = NO;
     
     NSDateComponents *minimumDateComponents = [self.calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate:self.minimumDate];
@@ -334,7 +334,7 @@ static NSString* kTodayButton = @"Today";
         {
             disabled = YES;
         }
-        columType = DayDatePickerViewColumnTypeDay;
+        columType = GreenDayDatePickerViewColumnTypeDay;
     }
     else if(tableView == self.monthsTableView)
     {
@@ -347,7 +347,7 @@ static NSString* kTodayButton = @"Today";
         {
             disabled = YES;
         }
-        columType = DayDatePickerViewColumnTypeDay;
+        columType = GreenDayDatePickerViewColumnTypeDay;
     }
     else if(tableView == self.yearsTableView)
     {
@@ -359,7 +359,7 @@ static NSString* kTodayButton = @"Today";
         {
             disabled = YES;
         }
-        columType = DayDatePickerViewColumnTypeDay;
+        columType = GreenDayDatePickerViewColumnTypeDay;
     }
     
     if(self.fontForRow)
@@ -491,6 +491,6 @@ static NSString* kTodayButton = @"Today";
 
 - (void)dealloc
 {
-    NSLog(@"DayDatePickerView dealloc");
+    NSLog(@"GreenDayDatePickerView dealloc");
 }
 @end

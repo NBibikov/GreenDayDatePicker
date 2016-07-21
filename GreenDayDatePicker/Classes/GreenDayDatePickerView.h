@@ -1,5 +1,5 @@
 //
-//  DayDatePickerView.h
+//  GreenDayDatePickerView.h
 //  YourProjectName
 //
 //  Created by Nick Bibikov on 7/7/16.
@@ -15,14 +15,14 @@ typedef NS_ENUM(NSInteger, DayDatePickerType)
 };
 
 
-typedef NS_ENUM(NSInteger, DayDatePickerViewColumnType)
+typedef NS_ENUM(NSInteger, GreenDayDatePickerViewColumnType)
 {
-    DayDatePickerViewColumnTypeDay,
-    DayDatePickerViewColumnTypeMonth,
-    DayDatePickerViewColumnTypeYear
+    GreenDayDatePickerViewColumnTypeDay,
+    GreenDayDatePickerViewColumnTypeMonth,
+    GreenDayDatePickerViewColumnTypeYear
 };
 
-@interface DayDatePickerView : UIView <UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate>
+@interface GreenDayDatePickerView : UIView <UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate>
 
 - (instancetype) initWithType:(DayDatePickerType) pickerType onView:(UIView*) superView;
 - (void) showDayDatePicker;

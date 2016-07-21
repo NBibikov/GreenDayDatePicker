@@ -20,13 +20,13 @@ pod 'GreenDayDatePicker'
 
 Import header
 ```
-#import <DayDatePickerView.h>
+#import <GreenDayDatePickerView.h>
 ```
 
 After that you have initialize datePicker and set parameters and block for data callback
 
 ```
-self.dayDatePicker = [[DayDatePickerView alloc] initWithType:DayDatePickerCenterType onView:self.view];
+self.dayDatePicker = [[GreenDayDatePickerView alloc] initWithType:DayDatePickerCenterType onView:self.view];
 
 [self.dayDatePicker setSaveDateButtonPressedBlock:^(UIBarButtonItem *sender, NSDate *date)
 {

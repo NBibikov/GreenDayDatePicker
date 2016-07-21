@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		2057827ED36EC6F3EE7ED11324D259A4 /* Pods-GreenDayDatePicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FADCE3C84DE96547FE0D77BC075093AE /* Pods-GreenDayDatePicker_Tests-dummy.m */; };
 		2E29DEFEBD46232D6DC52C21F75BAAC8 /* Pods-GreenDayDatePicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 917C8AAB80B066919E51387940F4C026 /* Pods-GreenDayDatePicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		396457CAE2DFCE0917F70913A50452FB /* DayDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 62F3658724413DD20EE9E3B91ECB850C /* DayDatePickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		396457CAE2DFCE0917F70913A50452FB /* GreenDayDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 62F3658724413DD20EE9E3B91ECB850C /* GreenDayDatePickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BCF4B7487FBAB2646FC8E3D045DE40A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		5F5C71F627A562AE28C843C8518D2CE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		A4D6D634930CEBB5EFD1CEA21464524A /* Pods-GreenDayDatePicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDD3738617EBA158075D20E0470B356 /* Pods-GreenDayDatePicker_Example-dummy.m */; };
 		A7ACDE2B5632EE1E126DA4474869F57C /* Pods-GreenDayDatePicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5C100BC174C1D090D76E6A9763C9B30 /* Pods-GreenDayDatePicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABCB1D130AE9FAF64ABE0F2282867F3C /* GreenDayDatePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3814EF2B0272C855F73D3B21DE16815C /* GreenDayDatePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DED5B6D48BB1343C9ECD728CB543326D /* GreenDayDatePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A019DAE6939B3FC75096864E152631F5 /* GreenDayDatePicker-dummy.m */; };
-		F53690546DF63F503C96AFA45CD93D2D /* DayDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D514C0F402DF38C110E213A62F210659 /* DayDatePickerView.m */; };
+		F53690546DF63F503C96AFA45CD93D2D /* GreenDayDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D514C0F402DF38C110E213A62F210659 /* GreenDayDatePickerView.m */; };
 		FBE9B8A40BF866B99D3E36675433F08B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +39,7 @@
 		3814EF2B0272C855F73D3B21DE16815C /* GreenDayDatePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GreenDayDatePicker-umbrella.h"; sourceTree = "<group>"; };
 		3C03A9FF5AD8B1DBCE82F7342CDDE08B /* Pods-GreenDayDatePicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GreenDayDatePicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		41ABD2A3789AEE62C6DEDA11C23772C8 /* Pods-GreenDayDatePicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GreenDayDatePicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		62F3658724413DD20EE9E3B91ECB850C /* DayDatePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DayDatePickerView.h; sourceTree = "<group>"; };
+		62F3658724413DD20EE9E3B91ECB850C /* GreenDayDatePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GreenDayDatePickerView.h; sourceTree = "<group>"; };
 		68CD460B91BA61C23C541325F3F98C4F /* Pods-GreenDayDatePicker_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GreenDayDatePicker_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		6FA4B779EA73943C9A09B6F5CC8946A3 /* Pods-GreenDayDatePicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GreenDayDatePicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71BC5550BC3A51498A87304552117F78 /* Pods-GreenDayDatePicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GreenDayDatePicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		BBF7851432DD6226042E653282CDD029 /* Pods-GreenDayDatePicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GreenDayDatePicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D1B0E06D59126586FC6A98FEE1D9EFC7 /* GreenDayDatePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GreenDayDatePicker.xcconfig; sourceTree = "<group>"; };
-		D514C0F402DF38C110E213A62F210659 /* DayDatePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DayDatePickerView.m; sourceTree = "<group>"; };
+		D514C0F402DF38C110E213A62F210659 /* GreenDayDatePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GreenDayDatePickerView.m; sourceTree = "<group>"; };
 		D5C100BC174C1D090D76E6A9763C9B30 /* Pods-GreenDayDatePicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GreenDayDatePicker_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D7C7B7ED9268EFE9522A161B6133B2C6 /* GreenDayDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GreenDayDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D8264F711DCF3F8EF6B26C4D9C50B6 /* Pods_GreenDayDatePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GreenDayDatePicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,8 +192,8 @@
 		BAF712913AF7F31B9264F930FBADD831 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				62F3658724413DD20EE9E3B91ECB850C /* DayDatePickerView.h */,
-				D514C0F402DF38C110E213A62F210659 /* DayDatePickerView.m */,
+				62F3658724413DD20EE9E3B91ECB850C /* GreenDayDatePickerView.h */,
+				D514C0F402DF38C110E213A62F210659 /* GreenDayDatePickerView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -232,7 +232,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				396457CAE2DFCE0917F70913A50452FB /* DayDatePickerView.h in Headers */,
+				396457CAE2DFCE0917F70913A50452FB /* GreenDayDatePickerView.h in Headers */,
 				ABCB1D130AE9FAF64ABE0F2282867F3C /* GreenDayDatePicker-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,7 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F53690546DF63F503C96AFA45CD93D2D /* DayDatePickerView.m in Sources */,
+				F53690546DF63F503C96AFA45CD93D2D /* GreenDayDatePickerView.m in Sources */,
 				DED5B6D48BB1343C9ECD728CB543326D /* GreenDayDatePicker-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
